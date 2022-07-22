@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/bgmain"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Age Calculator"
+        android:fontFamily="sans-serif-black"
+        android:textSize="25sp"
+        android:textColor="@color/font"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="View How old you are in minutes"
+        android:textSize="18sp"
+        android:textColor="@color/font"
+        android:paddingTop="5dp" />
+
+    <Button
+        android:id="@+id/DateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Select \nDate"
+        android:padding="40dp"
+        android:backgroundTint="@color/prim"
+        android:layout_margin="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Selected Date:"
+        android:textSize="20sp"
+        android:textColor="@color/font"
+        android:paddingTop="5dp" />
+    <TextView
+        android:id="@+id/DateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="10/28/2021"
+        android:textSize="16sp"
+        android:textColor="@color/sec"
+        android:paddingTop="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Age in Minutes:"
+        android:textSize="25sp"
+        android:textColor="@color/font"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/MinutesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="24000"
+        android:textSize="20sp"
+        android:textColor="@color/tert" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

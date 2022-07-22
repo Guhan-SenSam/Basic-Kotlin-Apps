@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuestionsActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/question_num_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            tools:text="Question 1"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ProgressBar
+                android:id="@+id/prg_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:layout_weight="1"
+                android:minHeight="50dp"
+                android:max="4"
+                android:progress="1"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                />
+            <TextView
+                android:id="@+id/prg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text = "3/10"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/question_text_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Q. What Country Flag is this?"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"/>
+        <ImageView
+            android:id="@+id/question_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_flag_of_australia"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/tv_button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:text="Apple"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/tv_bg_normal"/>
+        <TextView
+            android:id="@+id/tv_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:text="Apple"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/tv_bg_normal"/>
+        <TextView
+            android:id="@+id/tv_button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:text="Apple"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/tv_bg_normal"/>
+        <TextView
+            android:id="@+id/tv_button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:text="Apple"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/tv_bg_normal"/>
+        <Button
+            android:id="@+id/nxt_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="10dp"
+            tools:text = "Check Answer"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange"
+            android:padding="15dp"/>
+    </LinearLayout>
+
+
+</ScrollView>
